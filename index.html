@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melania Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Melania</div>
+    <nav aria-label="Main">
+      <a href="#story">Story</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle" aria-label="Toggle theme">🌗</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="story">
+      <h1>Melania Trump</h1>
+      <p class="lead">A concise, accessible single-page with a focus on readability and performance.</p>
+      <div class="row">
+        <button class="cta" data-target="#impact">Explore</button>
+        <button class="ghost" data-target="#contact">Get in touch</button>
+      </div>
+    </section>
+    <section id="impact" class="card" aria-labelledby="impact-title">
+      <h2 id="impact-title">Impact</h2>
+      <p>Clear messaging, neutral tone, and fast load times to ensure broad accessibility.</p>
+    </section>
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <form onsubmit="return false;" class="form"><input placeholder="Name"/><input placeholder="Email" type="email"/><textarea placeholder="Message" rows="4"></textarea><button type="submit">Submit</button></form>
+    </section>
+  </main>
+  <footer class="site-footer">© 2024 Melania</footer>
+  <script src="script.js"></script>
+</body>
+</html>
